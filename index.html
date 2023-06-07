@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1">
+        <title>태양광</title>
+        <link href="source/css/style.css" rel="stylesheet">
+
+    </head>
+
+    <body class="main">
+        
+
+
+        <!-- S:content -->
+        <div id="content">
+
+            <div class="info_box">
+                <h4 class="title02">실시간 발전량 예측값과 실제값 <small>예측일시: 2023-05-22 17:10:00</small></h4> 
+                <table class="table_col center fontLato">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Inv1</th>
+                            <th>Inv2</th>
+                            <th>Inv3</th>
+                            <th>Inv4</th>
+                            <th>Inv5</th>
+                            <th>Inv6</th>
+                            <th>Inv7</th>
+                            <th>Inv8</th>
+                            <th>Inv9</th>
+                            <th>Inv10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>predict</td>
+                            <td><span class="red">35</span></td>
+                            <td><span>36</span></td>
+                            <td><span>35</span></td>
+                            <td><span>37</span></td>
+                            <td><span>33</span></td>
+                            <td><span>35</span></td>
+                            <td><span>36</span></td>
+                            <td><span>35</span></td>
+                            <td><span>37</span></td>
+                            <td><span>33</span></td>
+                        </tr>
+                        <tr>
+                            <td>actual</td>
+                            <td><span class="red">18</span></td>
+                            <td><span>33</span></td>
+                            <td><span>34</span></td>
+                            <td><span>35</span></td>
+                            <td><span>32</span></td>
+                            <td><span>18</span></td>
+                            <td><span>33</span></td>
+                            <td><span>34</span></td>
+                            <td><span>35</span></td>
+                            <td><span>32</span></td>
+                        </tr>
+                    
+                    
+                    
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="info_box">
+                <h4 class="title02">패널 감시 현황</h4> 
+
+                <ul class="screen">
+                    <li>
+                        <strong>CCTV1</strong>
+                        <p class="img">
+                            <img src="source/images/tmp01.png">
+                        </p>
+                    </li>
+                    <li>
+                        <strong>CCTV2</strong>
+                        <p class="img">
+                            <img src="source/images/tmp01.png">
+                        </p>
+                    </li>
+                    <li>
+                        <strong>CCTV3</strong>
+                        <p class="img">
+                            <img src="source/images/tmp01.png">
+                        </p>
+                    </li>
+                    <li>
+                        <strong>CCTV4</strong>
+                        <p class="img">
+                            <img src="source/images/tmp01.png">
+                        </p>
+                    </li>
+                    <li>
+                        <strong>CCTV5</strong>
+                        <p class="img">
+                            <img src="source/images/tmp01.png">
+                        </p>
+                    </li>
+                    <li>
+                        <strong>CCTV6</strong>
+                        <p class="noimg">
+                            <span>신호없음</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="info_box">
+                <h4 class="title02">실시간 고장 예지 <small>최근 고장  진단 알람 일시 : 2023-05-22 17:10:00</small></h4> 
+                <table class="table_col center fontLato bodr">
+  
+                    <tbody>
+                        <tr>
+                            <th rowspan="2">
+                                <span>고장 발생</span>
+                                <span>가능성</span>
+                                <span>진단 결과</span>
+                            </th>
+                            <th>Inv1</th>
+                            <th>Inv2</th>
+                            <th>Inv3</th>
+                            <th>Inv4</th>
+                            <th>Inv5</th>
+                            <th>Inv6</th>
+                            <th>Inv7</th>
+                            <th>Inv8</th>
+                            <th>Inv9</th>
+                            <th>Inv10</th>
+                        </tr>
+                        <tr>
+                            <td><span class="red">위험</span></td>
+                            <td><span>정상</span></td>
+                            <td><span>정상</span></td>
+                            <td><span>정상</span></td>
+                            <td><span>정상</span></td>
+                            <td><span>정상</span></td>
+                            <td><span>정상</span></td>
+                            <td><span>정상</span></td>
+                            <td><span>정상</span></td>
+                            <td><span>정상</span></td>
+                        </tr>
+                    
+                    
+                    
+                    </tbody>
+                </table>
+
+                <div class="txt">
+                    <strong>AI 모델 설명</strong>
+
+                    <ul>
+                        <li>- 에러 코드 기반 고장 예지 모델을 사용하여 실시간으로 고장 발생 가능성을 진단하는 화면.</li>
+                            <li>- 과거 N 시간 데이터를 사용하여 모델에 입력, 만약 고장 발생 가능성이 있다는 결과가 도출될 경우 위험 으로 표시.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- E:content -->
+
+
+
+    </body>
+
+</html>

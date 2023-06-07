@@ -1,0 +1,230 @@
+// out: ./styl.css, compress: true, sourceMap: true
+@import "normalize", "rem", "font", "color", "mixin", "default";
+
+
+
+html {
+  min-width: $min-width;
+  max-width: 100%;
+  font-size: 14px;
+  height: -webkit-fill-available;
+}
+
+html,
+body {
+  font-family: $myfont, "Malgun Gothic", "apple sd gothic neo", sans-serif;
+
+}
+
+body {
+  background:#303444;
+
+  div#content {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+
+    
+    div.info_box {
+      background-color: #3a3d4e;
+      border-radius: 5px; 
+      padding: 20px;
+      margin-bottom: 5px;
+
+      h4.title02 {
+        font-weight: 300; 
+        font-size: 16px; 
+        color: #fdfcfc; 
+        margin-left: 10px; 
+        margin-bottom: 5px;
+
+        small {
+          font-size:14px;
+          color:#0196FE;
+          display:block;
+          margin:5px 0 0;
+        }
+      }
+
+
+
+
+      .table_col {
+        table-layout: fixed; 
+        width: 100%;
+        
+        &.bodr {
+          border-bottom:1px solid #4f536a ;
+        }
+
+        th,
+        td {
+          padding: 8px 4px;
+          text-align: center;
+        }
+
+        th{
+          font-weight: 400; 
+          height: 34px; 
+          background-color: #323546; 
+          border: solid 1px #4f536a; 
+          border-bottom-color: #292c3b; 
+          text-align: center;
+          font-size: 14px; 
+          color: #9294a1;
+
+          span {
+            display:block;
+          }
+        }
+
+        td {
+
+          height: 45px; 
+          border-bottom: solid 1px #5d617a; 
+          padding-top: 6px; 
+          padding-bottom: 6px;
+          line-height: 1.6em; 
+          font-weight: 300; 
+          font-size: 14px; 
+          color: #fafafc; 
+          text-align: center;
+
+          span {
+            display: inline-block;
+
+            &.red {
+              color:red;
+            }
+          }
+        }
+
+        tr {
+
+          &:first-child {
+            td {
+              border-top-width: 0;
+            }
+          }
+
+          &:last-child {
+            td {
+              border-bottom-width: 0;
+            }
+          }
+
+        }
+      
+        
+        &.bodr {
+          border-bottom:1px solid #4f536a ;
+
+          th {
+            &:first-child {
+              border-bottom-color:#4f536a; 
+            }
+          }
+        }
+
+      }
+
+      ul.screen {
+        margin:0;
+        padding:0;
+        list-style:none;
+        font-size:0;
+
+        li {
+          display:inline-block;
+          vertical-align:top;
+          margin:0 30px 30px 0;
+          width:calc((100% - 60px) / 3);
+          background:#323546;
+          border:1px solid #4B4F65;
+
+          &:nth-child(3n) {
+            margin-right:0;
+          }
+
+          strong {
+            display:block;
+            font-size:14px;
+            color:#9294A1;
+            text-align:center;
+            line-height:44px;
+            border-bottom:1px solid #4B4F65;
+          }
+
+          p.img {
+            width:100%;
+            height:250px;
+
+            img {
+              width:100%;
+              height:250px;
+              object-fit:cover;
+            }
+          }
+
+          p.noimg {
+            position:relative;
+            background:#2A2C3A;
+            width:100%;
+            height:250px;
+            text-align:center;
+
+            span {
+              display:block;
+              position:absolute;
+              top:50%;
+              left:0;
+              right:0;
+              transform:translateY(-50%);
+              font-size:14px;
+              color:#9294A1;
+
+              &::before {
+                content:"";
+                display:block;
+                width:30px;
+                height:26px;
+                margin:0 auto 10px;
+                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29.333' height='25.333' viewBox='0 0 29.333 25.333'%3E%3Cpath id='패스_2' data-name='패스 2' d='M1,27.333H30.333L15.667,2Zm16-4H14.333V20.667H17ZM17,18H14.333V12.667H17Z' transform='translate(-1 -2)' fill='%236b6e80'/%3E%3C/svg%3E%0A") no-repeat center / 100% auto;
+              }
+            }
+          }
+        }
+      }
+
+      div.txt {
+        margin:30px 0 0;
+        background:#2E303E;
+        border:1px solid #343748;
+        padding:20px;
+
+        strong {
+          display:block;
+          font-size:15px;
+          font-weight:400;
+          color:#FFD806;
+          margin-bottom:10px;
+        }
+
+        ul {
+          padding:0;
+          list-style:none;
+
+          li {
+
+            margin:0 0 6px;
+            color:#9294A1;
+            font-size:14px;
+          }
+        }
+      }
+
+    }
+
+
+  }
+}
