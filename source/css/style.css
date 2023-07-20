@@ -1887,6 +1887,49 @@ body div#content div.info_box .table_col.bodr {
 body div#content div.info_box .table_col.bodr th:first-child {
   border-bottom-color: #4f536a;
 }
+body div#content div.info_box .table_row {
+  table-layout: fixed;
+  width: 100%;
+}
+body div#content div.info_box .table_row th,
+body div#content div.info_box .table_row td {
+  padding: 8px 4px;
+  text-align: center;
+  border: solid 1px #4f536a;
+}
+body div#content div.info_box .table_row th {
+  font-weight: 400;
+  width: 100px;
+  background-color: #323546;
+  text-align: center;
+  font-size: 14px;
+  color: #9294a1;
+}
+body div#content div.info_box .table_row th span {
+  display: block;
+}
+body div#content div.info_box .table_row td {
+  height: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 1.6em;
+  font-weight: 300;
+  font-size: 14px;
+  color: #fafafc;
+  text-align: center;
+}
+body div#content div.info_box .table_row td span {
+  display: inline-block;
+}
+body div#content div.info_box .table_row td span.red {
+  color: red;
+}
+body div#content div.info_box .table_row.bodr {
+  border-bottom: 1px solid #4f536a;
+}
+body div#content div.info_box .table_row.bodr th:first-child {
+  border-bottom-color: #4f536a;
+}
 body div#content div.info_box ul.screen {
   margin: 0;
   padding: 0;
@@ -1968,4 +2011,151 @@ body div#content div.info_box div.txt ul li {
   margin: 0 0 6px;
   color: #9294A1;
   font-size: 14px;
+}
+body div#content div.info_box.flexbox div.box {
+  display: flex;
+  margin: 0 0 20px;
+}
+body div#content div.info_box.flexbox div.box div.outline {
+  flex-grow: 1;
+  padding-left: 20px;
+  margin: 20px 0 0;
+}
+body div#content div.info_box.flexbox div.box div.outline:first-of-type {
+  padding-left: 0;
+}
+body div#content div.info_box.flexbox div.box div.outline.big {
+  flex-shrink: 0;
+  min-width: 700px;
+}
+body div#content div.info_box.flexbox div.box div.outline.select_list {
+  flex-grow: 1;
+}
+body div#content div.info_box.flexbox div.box div.outline.select_list h5 {
+  text-align: center;
+}
+body div#content div.info_box.flexbox div.box div.outline.select_list ul {
+  border: solid 1px #4f536a;
+  height: 281px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+}
+body div#content div.info_box.flexbox div.box div.outline.select_list ul li {
+  border-bottom: solid 1px #4f536a;
+}
+body div#content div.info_box.flexbox div.box div.outline.select_list ul li button {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 10px;
+  font-size: 13px;
+  color: #fff;
+  background: #323546;
+}
+body div#content div.info_box.flexbox div.box div.outline.select_list ul li button:hover {
+  background: #232533;
+}
+body div#content div.info_box.flexbox div.box div.outline.select_list ul li button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='fill: rgba(255, 255, 255, .4);transform: ;msFilter:;'%3E%3Cpath d='M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z'%3E%3C/path%3E%3C/svg%3E");
+}
+body div#content div.info_box.flexbox div.box div.outline.chart {
+  flex-grow: 10;
+}
+body div#content div.info_box.flexbox div.box div.outline h5 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 0 5px;
+  background: #323546;
+  padding: 5px 10px;
+}
+body div#content div.info_box.flexbox div.box div.outline h5.center {
+  text-align: center;
+}
+body div#content div.info_box.flexbox div.box div.outline h5.center span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #FFD806;
+}
+body div#content div.info_box.flexbox div.box div.outline h5.center button {
+  vertical-align: top;
+  border: none;
+  background: none;
+  font-size: 0;
+  width: 24px;
+  height: 24px;
+  margin: 0 30px;
+}
+body div#content div.info_box.flexbox div.box div.outline h5.center button.left {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='fill: rgba(255, 255, 255, 1);transform: ;msFilter:;'%3E%3Cpath d='M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z'%3E%3C/path%3E%3C/svg%3E") no-repeat center/100% auto;
+}
+body div#content div.info_box.flexbox div.box div.outline h5.center button.right {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='fill: rgba(255, 255, 255, 1);transform: ;msFilter:;'%3E%3Cpath d='M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z'%3E%3C/path%3E%3C/svg%3E") no-repeat center/100% auto;
+}
+body div#content div.info_box.flexbox div.box div.outline ul.cloud {
+  display: flex;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+body div#content div.info_box.flexbox div.box div.outline ul.cloud li {
+  flex-shrink: 1;
+  display: flex;
+  text-align: center;
+  margin: 0 10px;
+  border: 10px solid #ccc;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  line-height: 1;
+  background: rgba(0, 0, 0, 0.4);
+}
+body div#content div.info_box.flexbox div.box div.outline ul.cloud li:nth-child(1) {
+  border-color: #0196FE;
+}
+body div#content div.info_box.flexbox div.box div.outline ul.cloud li:nth-child(2) {
+  border-color: #8706ff;
+}
+body div#content div.info_box.flexbox div.box div.outline ul.cloud li:nth-child(3) {
+  border-color: #b2fe01;
+}
+body div#content div.info_box.flexbox div.box div.outline ul.cloud li h6 {
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  margin: 0 0 5px;
+  flex-basis: 100%;
+}
+body div#content div.info_box.flexbox div.box div.outline ul.cloud li strong {
+  display: block;
+  text-align: center;
+  font-weight: 900;
+  font-size: 36px;
+  color: #fff;
+  margin: 0 0 10px;
+}
+body div#content div.info_box.flexbox div.box div.outline ul.cloud li span {
+  display: block;
+  flex-basis: 100%;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 5px;
+}
+body div#content div.info_box.flexbox div.box div.outline div.chartbox {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
