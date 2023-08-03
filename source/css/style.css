@@ -2059,6 +2059,10 @@ body div#content div.info_box.flexbox div.box div.outline.select_list ul li butt
 body div#content div.info_box.flexbox div.box div.outline.select_list ul li button:hover {
   background: #232533;
 }
+body div#content div.info_box.flexbox div.box div.outline.select_list ul li button.active {
+  background: #232533;
+  color: #FFD806;
+}
 body div#content div.info_box.flexbox div.box div.outline.select_list ul li button::after {
   content: "";
   display: block;

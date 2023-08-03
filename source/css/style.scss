@@ -340,6 +340,11 @@ body {
                       background:#232533;
                     }
 
+                    &.active {
+                      background:#232533;
+                      color:#FFD806;
+                    }
+
                     &::after {
                       content:"";
                       display:block;
