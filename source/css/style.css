@@ -2133,13 +2133,13 @@ body div#content div.info_box.flexbox div.box div.outline ul.cloud li {
   background: rgba(0, 0, 0, 0.4);
 }
 body div#content div.info_box.flexbox div.box div.outline ul.cloud li:nth-child(1) {
-  border-color: #0196FE;
+  border-color: #507ce0;
 }
 body div#content div.info_box.flexbox div.box div.outline ul.cloud li:nth-child(2) {
-  border-color: #8706ff;
+  border-color: #ff9c0f;
 }
 body div#content div.info_box.flexbox div.box div.outline ul.cloud li:nth-child(3) {
-  border-color: #b2fe01;
+  border-color: #46b264;
 }
 body div#content div.info_box.flexbox div.box div.outline ul.cloud li h6 {
   font-size: 20px;
